@@ -4,30 +4,37 @@ Universal AI-assisted development pipeline for any project type: mobile, backend
 
 ## Installation
 
-Install as a Claude Code plugin:
 ```bash
-# Via Claude Code plugin system
-/install-plugin path/to/cpl
+# Install globally (skills → ~/.claude/commands/cpl/)
+npx claude-pipeline@latest
+
+# Install locally to current project (skills → ./.claude/commands/cpl/)
+npx claude-pipeline@latest --local
+
+# Uninstall
+npx claude-pipeline@latest --uninstall
 ```
+
+After installation, commands are available as `/cpl:do`, `/cpl:new-project`, etc. in Claude Code.
 
 ## Project Setup
 
-After installing the plugin, initialize a project:
+Initialize a project with `ai/` artifacts:
 
 ```bash
 # With explicit type and stack
-~/.claude/plugins/cache/.../cpl/1.0.0/init.sh \
+npx claude-pipeline@latest init \
   --target-dir /path/to/project \
   --project-name "My App" \
   --type mobile \
   --stack "Kotlin + Compose + Koin"
 
 # Auto-detect type from project files
-~/.claude/plugins/cache/.../cpl/1.0.0/init.sh \
+npx claude-pipeline@latest init \
   --target-dir ~/my-project
 
 # Store ai/ inline (no symlinks)
-~/.claude/plugins/cache/.../cpl/1.0.0/init.sh \
+npx claude-pipeline@latest init \
   --target-dir ~/my-project \
   --inline
 ```
