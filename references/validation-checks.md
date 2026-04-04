@@ -9,31 +9,31 @@
 
 ## Содержательная проверка (по фазе)
 
-### После `/gather`:
+### После `/cpi:gather`:
 - `ai/context.md`: есть описание "Что строим", ограничения, текущее состояние
 
-### После `/product`:
+### После `/cpi:product`:
 - `ai/requirements.md`: есть хотя бы 1 user story с acceptance criteria, есть non-goals
 - `ai/tasks.md`: есть хотя бы 1 таск с чекбоксом `[ ]`
 
-### После `/architect`:
+### После `/cpi:architect`:
 - `ai/architecture.md`: есть ADR (хотя бы 1 решение), есть компоненты, есть data flow
 - `ai/api_contracts.md` (если backend/fullstack): есть хотя бы 1 эндпоинт с DTO
 
-### После `/design`:
+### После `/cpi:design`:
 - `ai/design.md`: есть user flows, есть wireframes (ASCII или ссылка на .pen)
 
-### После `/ui-spec`:
+### После `/cpi:ui-spec`:
 - `ai/ui_spec.md`: есть экраны со state-моделью
 
-### После `/test-plan`:
+### После `/cpi:test-plan`:
 - `ai/test_plan.md`: есть таблицы тестов хотя бы для 1 слоя
 
-### После `/gen` или `/gen-server`:
+### После `/cpi:gen` или `/cpi:gen-server`:
 - `ai/tasks.md`: хотя бы 1 таск отмечен `[x]`
 - `ai/impl_notes.md`: есть записи в "Выполнено"
 
-### После `/code-review`:
+### После `/cpi:code-review`:
 - `ai/review.md`: есть секция Critical/Warning/Nit (даже если пустая = всё ОК)
 
 ## Проверка консистентности между артефактами

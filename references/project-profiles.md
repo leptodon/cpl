@@ -37,40 +37,40 @@
 На основе профиля — выбери какие фазы и артефакты нужны:
 
 ### Базовые (всегда)
-- `/gather` → `ai/context.md`
-- `/product` → `ai/requirements.md`, `ai/tasks.md`
-- `/architect` → `ai/architecture.md`
-- `/gen` → `ai/impl_notes.md`
-- `/code-review` → `ai/review.md`
-- `/debug` + `/debug-fix` → `ai/debug.md`
+- `/cpi:gather` → `ai/context.md`
+- `/cpi:product` → `ai/requirements.md`, `ai/tasks.md`
+- `/cpi:architect` → `ai/architecture.md`
+- `/cpi:gen` → `ai/impl_notes.md`
+- `/cpi:code-review` → `ai/review.md`
+- `/cpi:debug` → `ai/debug.md`
 - `ai/gotchas.md` — реестр подводных камней (пополняется всеми фазами)
-- `/routine`
-- `/bootstrap`, `/progress`, `/handoff`
+- `/cpi:routine`
+- `/cpi:progress`, `/cpi:handoff`
 
 ### Если есть UI (mobile/frontend)
-- `/design` → `ai/design.md`
-- `/ui-spec` → `ai/ui_spec.md`
+- `/cpi:design` → `ai/design.md`
+- `/cpi:ui-spec` → `ai/ui_spec.md`
 
 ### Если fullstack (mobile + backend)
-- `/gen-server` → `ai/impl_notes.md`
-- `/api-diff` → `ai/api_diff.md`
+- `/cpi:gen-server` → `ai/impl_notes.md`
+- `/cpi:api-diff` → `ai/api_diff.md`
 - `ai/api_contracts.md`
 - `ai/screens_api_map.md`
 
 ### Если есть backend
-- `/gen-server` → `ai/impl_notes.md`
-- `/migrate` → `ai/migration.md`
-- `/security` → `ai/security.md`
+- `/cpi:gen-server` → `ai/impl_notes.md`
+- `/cpi:migrate` → `ai/migration.md`
+- `/cpi:security` → `ai/security.md`
 - `ai/api_contracts.md`
 
 ### Если есть тесты
-- `/test-plan` → `ai/test_plan.md`
-- `/gen-tests`
+- `/cpi:test-plan` → `ai/test_plan.md`
+- `/cpi:gen-tests`
 
 ### Post-MVP (включить при зрелом проекте)
-- `/refactor` → `ai/refactor.md`
-- `/changelog` → `ai/changelog.md`
-- `/release` → `ai/release.md`
+- `/cpi:refactor` → `ai/refactor.md`
+- `/cpi:changelog` → `ai/changelog.md`
+- `/cpi:release` → `ai/release.md`
 
 Выведи таблицу:
 ```
