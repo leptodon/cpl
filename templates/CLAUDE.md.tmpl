@@ -23,7 +23,7 @@ Claude не должен запускать сборку/рантайм кома
 
 | Признаки запроса | Фаза |
 |---|---|
-| "посмотри", "разберись", путь к файлу | `/cpl:gather` |
+| "посмотри", "разберись", путь к файлу | `/cpl:context` |
 | "хочу фичу", "нужно чтобы", бизнес-логика | `/cpl:product` |
 | "как построить", "структура", "паттерн" | `/cpl:architect` |
 | "напиши", "реализуй", "сделай" + код | `/cpl:gen` или `/cpl:gen-server` |
@@ -41,7 +41,7 @@ Claude не должен запускать сборку/рантайм кома
 
 | # | Команда | Модель | Читает | Пишет |
 |---|---------|--------|--------|-------|
-| 0 | `/cpl:gather` | haiku | сырые файлы/логи | `ai/context.md` |
+| 0 | `/cpl:context` | haiku | сырые файлы/логи | `ai/context.md` |
 | 1 | `/cpl:product` | opus | `context.md` | `requirements.md`, `tasks.md` |
 | 2 | `/cpl:architect` | opus | `requirements.md`, `context.md` | `architecture.md`, `api_contracts.md` |
 | 3a | `/cpl:design` | opus | `requirements.md`, `context.md` | `design.md` |

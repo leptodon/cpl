@@ -1,9 +1,9 @@
 ---
-name: "cpl:gather"
+name: "cpl:context"
 description: "Use when you need to collect/update project context from files, logs, README, or bootstrap missing ai/*.md artifacts"
 ---
 
-# /cpl:gather
+# /cpl:context
 
 **Recommended model: haiku**
 
@@ -37,7 +37,7 @@ $ARGUMENTS
 4. **НЕ перезаписывай** уже существующие файлы
 5. Выведи список созданных и уже существующих файлов
 
-> Если `ai/` не существовало — рекомендуй после gather запустить `/cpl:new-project` для полной настройки конвейера.
+> Если `ai/` не существовало — рекомендуй после context запустить `/cpl:new-project` для полной настройки конвейера.
 
 ## Режим работы
 

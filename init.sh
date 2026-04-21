@@ -253,4 +253,4 @@ if [[ "$INLINE" != "true" ]]; then
   echo "Excluded:   .git/info/exclude (local, not committed)"
 fi
 echo
-echo "Next: /cpl:new-project or /cpl:gather"
+echo "Next: /cpl:new-project or /cpl:context"

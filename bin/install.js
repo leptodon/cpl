@@ -353,7 +353,7 @@ function initProject() {
   }
 
   console.log(`\nDone.`);
-  console.log(`Next: /cpl:new-project or /cpl:gather\n`);
+  console.log(`Next: /cpl:new-project or /cpl:context\n`);
 }
 
 // ---------------------------------------------------------------------------

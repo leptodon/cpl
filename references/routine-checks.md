@@ -18,6 +18,42 @@
 - Один логический change = один коммит
 - Не коммить: `.env`, credentials, IDE-специфичные файлы
 
+## Commit Trailers (опционально, для нетривиальных решений)
+
+Добавляй трейлеры когда решение требует контекста для будущих агентов:
+
+```
+feat: краткое описание изменения
+
+Тело коммита (если нужно).
+
+Rejected: <альтернатива> | <причина отклонения>
+Directive: <предупреждение для будущих разработчиков>
+Constraint: <ограничение, которое повлияло на решение>
+Confidence: high | medium | low
+Scope-risk: narrow | moderate | broad
+Not-tested: <кейс, не покрытый тестами>
+```
+
+Пример:
+
+```
+fix(auth): перехватывать все 4xx для инлайн-обновления токена
+
+Сервис auth не поддерживает introspection, поэтому
+interceptor ловит все 4xx и сразу рефрешит токен.
+
+Rejected: продлить TTL токена до 24h | нарушение security policy
+Rejected: фоновый refresh по таймеру | race condition при параллельных запросах
+Constraint: Auth service не поддерживает token introspection
+Directive: обработка намеренно широкая (все 4xx) — не сужай без проверки upstream
+Confidence: high
+Scope-risk: narrow
+Not-tested: cold-start latency Auth service >500ms
+```
+
+Трейлеры можно пропускать для мелких изменений (typo, форматирование, тривиальные фиксы).
+
 ## Import Cleanup
 
 - Удали неиспользуемые imports

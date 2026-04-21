@@ -67,13 +67,13 @@ Each phase reads artifacts from previous phases and writes to its own. Phases ru
 ### Quick Start
 ```
 /cpl:new-project          # One-time setup: detect stack, create artifacts
-/cpl:gather               # Collect context from project files
+/cpl:context               # Collect context from project files
 /cpl:kickoff [description] # Fast-track: context → requirements → tasks
 ```
 
 ### Main Pipeline
 ```
-/cpl:gather → /cpl:product → /cpl:architect → /cpl:design → /cpl:ui-spec
+/cpl:context → /cpl:product → /cpl:architect → /cpl:design → /cpl:ui-spec
   → /cpl:test-plan → /cpl:gen → /cpl:gen-tests → /cpl:code-review
   → /cpl:verify → /cpl:debug (if needed) → /cpl:release
 ```
@@ -83,7 +83,7 @@ Each phase reads artifacts from previous phases and writes to its own. Phases ru
 #### Pipeline Phases
 | Command | Model | Description |
 |---------|-------|-------------|
-| `/cpl:gather` | haiku | Collect context from files/logs/docs → `ai/context.md` |
+| `/cpl:context` | haiku | Collect context from files/logs/docs → `ai/context.md` |
 | `/cpl:product` | opus | Requirements + user stories → `ai/requirements.md` |
 | `/cpl:architect` | opus | Architecture + ADRs + trade-off comparison → `ai/architecture.md` |
 | `/cpl:design` | opus | UX design + user flows → `ai/design.md` |

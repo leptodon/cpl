@@ -22,7 +22,7 @@ description: "Use when user asks what to do next, wants to know current progress
 Определи первый незаполненный артефакт в цепочке:
 
 ```
-ai/context.md      [ ] → /cpl:gather
+ai/context.md      [ ] → /cpl:context
 ai/requirements.md [ ] → /cpl:product
 ai/architecture.md [ ] → /cpl:architect
 ai/design.md       [ ] → /cpl:design (если UI-проект)
