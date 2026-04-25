@@ -127,6 +127,9 @@ If `tdd` is not set or false — use standard flow (code -> verification gate).
 - [ ] Таск отмечен `[x]` в `ai/tasks.md`?
 - [ ] Коммит один на таск (максимум 1-3)?
 
+## Следующая фаза
+По завершении предложи: `/cpl:code-review` — ревью написанного кода.
+
 ## Skills
 - `verification-before-completion` — перед завершением убедись что код собирается и работает
 - `test-driven-development` — если проект использует TDD-подход

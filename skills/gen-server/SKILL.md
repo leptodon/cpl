@@ -97,5 +97,8 @@ If `tdd` is not set or false — use standard flow (code -> verification gate).
 - Минимум комментариев (только где неочевидно)
 - Идиоматичный код для языка проекта
 
+## Следующая фаза
+По завершении предложи: `/cpl:code-review` — ревью написанного кода.
+
 ## Skills
 - `verification-before-completion` — перед завершением убедись что код собирается и работает
